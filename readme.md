@@ -1,10 +1,3 @@
-# Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/MikeSzabla/calc2.svg?branch=main)](https://app.travis-ci.com/github/MikeSzabla/calc2)
+# Calculator for Article 3b
 
-To run tests, Lint, and Coverage report use this command:
-
-pytest  --pylint --cov
-
-.pylintrc is the config for pylint
-.coveragerc is the config for coverage
-setup.py is a config file for pytest
+Build of the calculator that demonstrates polymorphism through the use of \*args for all calculations
