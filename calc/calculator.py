@@ -56,21 +56,21 @@ class Calculator:
         return Calculator.history.pop(index)
 
     @staticmethod
-    def add_number(*args):
+    def add_number(args: tuple):
         """adds all passed in args and adds operation to history"""
-        Calculator.add_calculation_to_history(Addition.create(*args))
+        Calculator.add_calculation_to_history(Addition.create(args))
 
     @staticmethod
-    def subtract_number(*args):
+    def subtract_number(args: tuple):
         """subtracts from first value all subsequent values"""
-        Calculator.add_calculation_to_history(Subtraction.create(*args))
+        Calculator.add_calculation_to_history(Subtraction.create(args))
 
     @staticmethod
-    def multiply_number(*args):
+    def multiply_number(args: tuple):
         """multiplies all passed values"""
-        Calculator.add_calculation_to_history(Multiplication.create(*args))
+        Calculator.add_calculation_to_history(Multiplication.create(args))
 
     @staticmethod
-    def divide_number(*args):
+    def divide_number(args: tuple):
         """divides first passed value by all subsequent values"""
-        Calculator.add_calculation_to_history(Division.create(*args))
+        Calculator.add_calculation_to_history(Division.create(args))
