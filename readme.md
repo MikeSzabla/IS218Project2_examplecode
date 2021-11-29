@@ -1,5 +1,5 @@
 # Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/MikeSzabla/calc2.svg?branch=main)](https://app.travis-ci.com/github/MikeSzabla/calc2)
+[![Build Status](https://app.travis-ci.com/MikeSzabla/Calculator-V2.svg?branch=main)](https://app.travis-ci.com/github/MikeSzabla/Calculator-V2)
 
 To run tests, Lint, and Coverage report use this command:
 

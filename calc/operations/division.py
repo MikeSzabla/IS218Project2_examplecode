@@ -7,10 +7,7 @@ class Division(Calculation):  # pylint: disable=too-few-public-methods
 
     def get_result(self):
         """returns value_a divided by value_b"""
-        try:
-            result = self.values[0]
-            for value in self.values[1:]:
-                result = result / value
-            return result
-        except ZeroDivisionError:
-            return None
+        result = self.values[0]
+        for value in self.values[1:]:
+            result = result / value
+        return result
