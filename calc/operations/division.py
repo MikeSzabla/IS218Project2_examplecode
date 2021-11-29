@@ -2,6 +2,7 @@
 from calc.operations.calculation import Calculation
 
 
+# Division class inheriting from parent class Calculation
 class Division(Calculation):  # pylint: disable=too-few-public-methods
     """Division Class"""
 

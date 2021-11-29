@@ -1,11 +1,17 @@
 """Calculation"""
+from abc import abstractmethod, ABC
 
 
-class Calculation:  # pylint: disable=too-few-public-methods
-    """Operation Class"""
+class Calculation(ABC):  # pylint: disable=too-few-public-methods
+    """Calculation Class"""
     def __init__(self, args: tuple):
         """default constructor setting up value variables"""
         self.values = Calculation.args_to_float_tuple(args)
+
+    @abstractmethod
+    # abstract get_result method that must be implemented by every child
+    def get_result(self):
+        pass
 
     @classmethod
     def create(cls, args: tuple):

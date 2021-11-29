@@ -24,8 +24,7 @@ def test_get_history_length(calculator_fixture):  # pylint: disable=unused-argum
 
 def test_calculator_history(calculator_fixture):  # pylint: disable=unused-argument
     """tests history by checking length after adding operation"""
-
-    Calculator.add_number((1,))
+    Calculator.add_number((1, 2))
     assert Calculator.get_history_length() == 5
 
 
